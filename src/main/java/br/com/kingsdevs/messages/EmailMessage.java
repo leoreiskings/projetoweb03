@@ -10,21 +10,13 @@ import org.springframework.mail.javamail.MimeMessagePreparator;
 
 public class EmailMessage {
 
-	/* parametros para envio de email
+	/* parametros para envio de email*/
 	 
 	private static final String CONTA = "xxxxxxxxxxxxxxxx";
 	private static final String SENHA = "xxxxxxxxxxxxxxxx";
 	private static final String SMTP = "smtp.gmail.com";
 	private static final Integer PORTA = 587;
 	
-	 * */
-		
-	//parametros para envio de email
-		private static final String CONTA = "leo19reis@gmail.com";
-		private static final String SENHA = "ovfjhcvqxqqtsnxv";
-		private static final String SMTP = "smtp.gmail.com";
-		private static final Integer PORTA = 587;
-
 		public static void sendMessage(final String dest, final String assunto, final String mensagem) throws Exception {
 
 			JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
